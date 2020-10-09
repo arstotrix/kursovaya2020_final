@@ -9,8 +9,12 @@ file =  os.path.join(filepath, files[0])
 with open (file, encoding='utf-8') as f:
     sentences = f.read()[1:].splitlines()
 print(sentences[0])
+bert_embedding = BertEmbedding()
+result = bert_embedding(sentences)
 
-bert = BertEmbedding(ctx=ctx)
+print(result[0][1])
+
+
 
 
 
