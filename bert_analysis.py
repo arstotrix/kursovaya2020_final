@@ -2,7 +2,7 @@ import os
 #from bert_embedding import BertEmbedding
 
 curr_dir = os.getcwd()
-filepath = os.path.join(curr_dir, 'csv_files')
+filepath = os.path.join(curr_dir, 'data/untagged')
 files = os.listdir(filepath)
 #вот здесь ниже поменять циферку
 file =  os.path.join(filepath, files[1])
